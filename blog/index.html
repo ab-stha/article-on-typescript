@@ -11,11 +11,11 @@
         <div class="headerWrapper">
             <h1 class="title">TypeScript Fundamentals</h1>
             <br/>
-            <h2 class="author">
+            <!-- <h2 class="author">
                 A School Of Code Hackathon
                 <br>
                 Brought to you by: Abhiparth
-            </h2>
+            </h2> -->
         </div>
     </header>
     <main>
@@ -25,9 +25,8 @@
                     <ol class="menu_ol">
                         <li class="menu_li">Introduction</li>
                         <li class="menu_li">Basic variables</li>
-                        <li class="menu_li">Functions</li>
-                        <li class="menu_li">Interface</li>
-                        <li class="menu_li">Enum</li>
+                        <li class="menu_li">Functions & Objects</li>
+                        <li class="menu_li">Advanced (TBA)</li>
                     </ol>
                 </section>
                 <section class="intro">
@@ -35,7 +34,15 @@
                     <p class ="subP">
                         This article will cover the fundamentals of TypeScript. To begin, what is TypeScript?
                         TypeScript is a superset of JavaScript. This means that it is a 
-                        language that extends JavaScript. It adds additional features to JavaScript, such as static typing.
+                        language that extends JavaScript. We use it instead of JavaScript because it
+                        adds an additional layer of security via type checking and static checking.
+
+                        <br/>
+                        <br/>
+
+                        This means that as a <strong>pre-requisite</strong> to getting the most out of
+                        this article, you should have a basic understanding of the fundamentals of JavaScript,
+                        such as variables, functions, objects, etc.
                     </p>
                 </section>
 
@@ -43,11 +50,126 @@
                     <h3 class="subH3">Basic Variables</h3>
                     <p class ="subP">
                         When we convert JavaScript to TypeScript, we must declare the
-                        type of the variable, such as by using type annotations.
+                        type of the variable, such as by using <strong>type annotations</strong>.
                         <br/>
                         Here are some examples of basic variables in TypeScript:
                     </p>
-                    <img src="../Screenshots/carbon.png" alt="code snippet of string variable" class="string_variable"/>
+                    <figure class="fig1">
+                        <figcaption class="figCaption1">Imagine you are creating a variable that
+                            stores a question. The data type of this variable would be a string.
+                        </figcaption>
+                        <img src="../Screenshots/ss1.png" alt="code snippet of string variable" class="string_variable"/>
+                    </figure>
+
+                    <br/>
+                    <br/>
+
+                    <p class ="subP">
+                        Now we can imagine the response to this question. The user would be inclined to respond
+                        with a number, so we can use a number variable.
+                    </p>
+                    <figure class="fig2">
+                        <figcaption class="figCaption2">
+                            Now this variable stores a number.
+                        </figcaption>
+                        <img src="../Screenshots/ss2.png" alt="code snippet of number variable" class="number_variable"/>
+                    </figure>
+
+                    <br/>
+                    <br/>
+
+                    <p class ="subP">
+                        Let's say that the user made a mistake and entered the wrong age.
+                        <br/>
+                        They can correct
+                        this simply just like in JavaScript by reassigning the variable:
+
+                        <br/>
+                        <br/>
+
+                        <p class="code_p"><code>answer = 24</code></p>
+                    </p>
+
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <p class ="subP">
+                        But what if the user wants to respond with a string?
+                        <br/>
+                        e.g.
+                        <br/>
+                        <p class="code_p"><code>answer = '24'</code></p>
+                    </p>
+
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <figure class="fig3">
+                        <figcaption class="figCaption3">
+                            This will throw an error because we have told TypeScript that the variable
+                            is a number.
+                        </figcaption>
+                        <img src="../Screenshots/ss3.png" alt="code snippet of error" class="error_ss"/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    <p class ="subP">
+                        In this case, we can use a <strong>union type</strong> to tell TypeScript 
+                        that the variable can have either a string or number!
+                        <br/>
+                        Here's how:
+                    </p>
+                    <figure class="fig4">
+                        <figcaption class="figCaption4">
+                            Now this variable can have a type of either a string or number
+                        </figcaption>
+                        <img src="../Screenshots/ss4.png" alt="code snippet of union type" class="type_union"/>
+                    </figure>
+                </section>
+                <section class="Functions">
+                    <h3 class="subH3">Functions & Objects</h3>
+                    <p class ="subP">
+                        Now as you have guessed, we can apply the same concept of type annotations to
+                        functions as well!
+                        <br/>
+                        <figure class="fig5">
+                            <figcaption class="figCaption5">
+                                This function takes in a number and returns the number multiplied by 2.
+                                We can see that the argument type as well as the return type is a number.
+                            </figcaption>
+                            <img src="../Screenshots/ss5.png" alt="code snippet of function" class="function_snippet"/>
+                        </figure>
+                    </p>
+                    <br/>
+                    ...
+                    <br/>
+                    <br/>
+                    <p class ="subP">
+                        ...But we can take that one step further and use interfaces to define the shape of the
+                        argument and return type.
+
+                        <br/>
+                        <br/>
+
+                        <figure class="fig6">
+                            <figcaption class="figCaption6">
+                                This interface defines the structure of the following function.
+                            </figcaption>
+                            <img src="../Screenshots/ss6.png" alt="code snippet of interface" class="interface_snippet"/>
+                        </figure>
+                        <figure class="fig7">
+                            <figcaption class="figCaption7">
+                                By using the interface above, we can now define the argument and return type of the function,
+                                which are numbers.
+                            </figcaption>
+                            <img src="../Screenshots/ss7.png" alt="code snippet of interface" class="interface_snippet"/>
+                        </figure>
+                    </p>
                 </section>
             </div>
             

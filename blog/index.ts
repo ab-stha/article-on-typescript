@@ -15,3 +15,14 @@ answer = 24;    // Valid type assignment
 
 
 answer = "24";  // Invalid type assignment
+
+
+interface MultiplyFunction {
+    (input: number): number;
+}
+
+
+
+const multiply: MultiplyFunction = (input: number) => {
+    return input * 2;
+}

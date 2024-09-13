@@ -1,17 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    color:black;
 }
 
 body {
 
-    background-color: rgb(202, 195, 195);
+    /* background-color: rgb(202, 195, 195); */
+    background-color: royalblue;
 }
 
 .headerWrapper {
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+
     padding-top: 45px;
     padding-bottom: 45px;
 }
@@ -20,7 +22,7 @@ body {
     text-align: center;
     font-size: 200px;
     font-weight: bold;
-    color: black;
+
 }
 
 .author {
@@ -35,13 +37,13 @@ body {
 .wrapper {
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+
     display: flex;
     justify-content: center;
 }
 
 .innerWrapper {
-    background-color: darkblue;
+    background-color: #FFF39A;
     height: 100%;
     width: 70%;
     padding-top: 40px;
@@ -54,9 +56,13 @@ body {
 }
 
 .menu {
-    background-color: rgb(233, 233, 158);
+    /* background-color: rgb(233, 233, 158); */
+    background-color: orange;
     font-size: 70px;
     padding: 20px;
+    color: white;
+    width: 50%;
+    margin: 30px;
 }
 
 section {
@@ -65,15 +71,67 @@ section {
 }
 
 .subH3 {
-    /* text-align: center; */
     font-size: 90px;
     font-weight: bold;
-    color: white;
+    color: black;
     padding: 30px;
 }
 
 .subP {
-    /* text-align: center; */
     font-size: 70px;
-    color: white;
+    color: black;
+    padding: 30px;
+}
+
+.fig1, .fig2, .fig3, .fig4, .fig5, .fig6, .fig7 {
+    display: inline-block;
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.string_variable, .number_variable, .type_union, .function_snippet, .interface_snippet {
+    width: 100%;
+    height: auto;
+}
+
+.error_ss {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 15px 6px rgba(0, 0, 0, 0.4);
+}
+
+.figCaption1, .figCaption2, .figCaption3, .figCaption4, .figCaption5, .figCaption6, .figCaption7 {
+    font-size: 50px;
+    color: black;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+    background-color: orange;
+    width: auto;
+    height:65px;
+    text-align: start;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+}
+
+.code_p {
+    text-indent: 60px;
+    font-size: 70px;
+    color: black;
+    border: grey solid 6px;
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    margin-left: 30px;
+    box-shadow: 0 15px 6px rgba(0, 0, 0, 0.4);
+}
+
+code{
+    color: black;
+}
+
+strong {
+    color: black;
 }
